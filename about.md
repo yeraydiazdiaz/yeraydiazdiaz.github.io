@@ -4,6 +4,8 @@ title: About me
 permalink: /about/
 ---
 
+<img src="{{ site.url }}/assets/yeray.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
+
 # Hello, I'm Yeray (pronounced Yer-i-ee)
 
 I'm a software engineer living and working in London. I do consultancy helping companies on their Python web stacks where I'm comfortable at any level. I like to think of myself as helpful and not preachy but I do have my opinions about certain things (*cough* testing).

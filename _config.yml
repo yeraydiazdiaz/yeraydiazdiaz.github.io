@@ -30,6 +30,7 @@ markdown: kramdown
 #theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-gist
 # kramdown:
 #   auto_ids: true
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Django/Rails cheat sheet"
-date:   2017-07-15 15:44:39 +0100
+date:   2015-04-17 15:44:39 +0100
 categories: blog
 tags: django rails
 image: django-rails-cheat-sheet.jpg
