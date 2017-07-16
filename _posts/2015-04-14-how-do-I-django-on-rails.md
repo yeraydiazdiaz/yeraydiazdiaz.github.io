@@ -4,6 +4,7 @@ title:  "How to I Django on Rails?"
 date:   2015-04-14 15:44:39 +0100
 categories: blog
 tags: django rails
+image: how-do-i-django-on-rails.jpg
 ---
 
 You are seasoned Django developer.

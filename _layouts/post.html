@@ -1,25 +1,83 @@
----
-layout: default
----
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ page.date | date: date_format }}
-      </time>
-      {% if page.author %}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
-      {% endif %}</p>
-  </header>
+  {% include head.html %}
 
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-  </div>
+  <body>
 
-  {% if site.disqus.shortname %}
-    {% include disqus_comments.html %}
-  {% endif %}
-</article>
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+        <div class="wrapper">
+          <header class="post-header">
+            <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+            <p class="post-meta">
+              <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                {{ page.date | date: date_format }}
+              </time>
+              {% if page.author %}
+                • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+              {% endif %}</p>
+          </header>
+        </div>
+
+        <div class="post-image">
+          <img src="{{ site.url }}/assets/{{ page.image }}" />
+        </div>
+
+        <div class="wrapper">
+          <div class="post-content" itemprop="articleBody">
+            {{ content }}
+          </div>
+        </div>
+
+        {% if site.disqus.shortname %}
+          {% include disqus_comments.html %}
+        {% endif %}
+      </article>
+
+    </main>
+
+    <script type="text/javascript">
+      var anchorForId = function (id) {
+        var anchor = document.createElement("a");
+        anchor.className = "header-link";
+        anchor.href      = "#" + id;
+        return anchor;
+      };
+
+      var linkifyAnchors = function (level, containingElement) {
+        var headers = containingElement.getElementsByTagName("h" + level);
+        for (var h = 0; h < headers.length; h++) {
+          var header = headers[h];
+
+          if (typeof header.id !== "undefined" && header.id !== "") {
+            var newWrapper = anchorForId(header.id);
+            header.parentNode.replaceChild(newWrapper, header);
+            newWrapper.appendChild(header);
+          }
+        }
+      };
+
+      document.onreadystatechange = function () {
+        if (this.readyState === "complete") {
+          var contentBlock = document.getElementsByClassName("post-content")[0];
+          if (!contentBlock) {
+            return;
+          }
+          for (var level = 1; level <= 6; level++) {
+            linkifyAnchors(level, contentBlock);
+          }
+        }
+      };
+    </script>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

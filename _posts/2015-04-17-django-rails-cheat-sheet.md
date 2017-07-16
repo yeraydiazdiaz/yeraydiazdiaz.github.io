@@ -4,6 +4,7 @@ title:  "Django/Rails cheat sheet"
 date:   2017-07-15 15:44:39 +0100
 categories: blog
 tags: django rails
+image: django-rails-cheat-sheet.jpg
 ---
 
 Hey, Django dev, come here for a sec!
