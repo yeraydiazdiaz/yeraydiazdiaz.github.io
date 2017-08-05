@@ -8,13 +8,13 @@ permalink: /about/
 
 # Hello, I'm Yeray (pronounced Yer-i-ee)
 
-I'm a software engineer living and working in London. I do consultancy helping companies on their Python web stacks where I'm comfortable at any level. I like to think of myself as helpful and not preachy but I do have my opinions about certain things (*cough* testing).
+I'm a software engineer living and working in London. I do consultancy helping companies on their web projects where I'm comfortable at any level. I like to think of myself as helpful and not preachy but I do have my opinions about certain things (*cough* testing).
 
-I'm a Python enthusiast but I've delved in other languages like Javascript, Ruby, Objective-C, ActionScript or C# and have some DevOps experience.
+I'm a Python enthusiast but I'm also familiar with languages like Javascript, Ruby, Objective-C, ActionScript or C# and have some DevOps experience. But most of all I love clean code.
 
-I like to write code and about code, usually articles that help people get started on certain technologies or practices that I've struggled or am passionate about. Have look at the [blog](/) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
+I also like to write about code, usually articles that help people get started on certain technologies or practices that I've struggled or am passionate about. Have look at the [blog](/) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
 
-You can find me on [Twitter][twitter] or [Github][github] in the links below, or you can [send me an email](mailto:{{ site.email }}).
+You can find me on [Twitter][twitter] or [Github][github] in the links below, you can [send me an email](mailto:{{ site.email }}) or look find me on [Keybase](https://keybase.io/yeray).
 
 
 [twitter]: https://twitter.com/{{ site.twitter_username }}
