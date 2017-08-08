@@ -31,9 +31,8 @@ permalink: /blog/:title
 markdown: kramdown
 #theme: minima
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
-  - jekyll-gist
+  - jekyll-sitemap
 # kramdown:
 #   auto_ids: true
 
