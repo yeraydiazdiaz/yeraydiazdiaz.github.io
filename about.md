@@ -16,7 +16,7 @@ I also like to write about code, usually articles that help people get started o
 
 ## Projects
 
-Here's a quick summary of my personal projects, you can find more on my [Github profile](github):
+Here's a quick summary of my personal projects, you can find more on my [Github profile][github]:
 
 - [Tailsocket](https://github.com/yeraydiazdiaz/tailsocket), a WebSocket application to tail files to the browser. Using [Tornado](http://tornadoweb.org/), [asyncio](https://docs.python.org/3/library/asyncio.html) and [React](https://facebook.github.io/react/) for the frontend.
 - [Tornado H2](https://github.com/yeraydiazdiaz/tornado_h2), an HTTP/2 server integrating [hyper-h2](https://python-hyper.org/h2/en/stable/) with [Tornado](http://tornadoweb.org/).
