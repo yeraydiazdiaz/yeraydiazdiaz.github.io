@@ -8,11 +8,11 @@ permalink: /about/
 
 # Hello, I'm Yeray (pronounced Yer-i-ee)
 
-I'm a software engineer living and working in London. I do consultancy helping companies on their web projects where I'm comfortable at any level. I like to think of myself as helpful and not preachy but I do have my opinions about certain things (*cough* testing).
+I'm a software engineer living and working in London. I do consultancy helping companies on their web projects where I'm comfortable at in backend and frontend.
 
-I'm a Python enthusiast but I'm also familiar with languages like Javascript, Ruby, Objective-C, ActionScript or C# and have some DevOps experience. But most of all I love clean code.
+I work primarily in Python and Javascript and have experience with Ruby, Objective-C and C#, but mostly I love clean, maintanable code.
 
-I also like to write about code, usually articles that help people get started on certain technologies or practices that I've struggled or am passionate about. Have look at the [blog](/) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
+I also write about code, usually articles that help people get started on certain technologies or practices that I've struggled or am passionate about. Have look at the [blog](/) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
 
 ## Projects
 
