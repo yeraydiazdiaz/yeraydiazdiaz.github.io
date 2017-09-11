@@ -6,13 +6,13 @@ permalink: /about/
 
 <img src="{{ site.url }}/assets/yeray.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
 
-# Hello, I'm Yeray (pronounced Yer-i-ee)
+# Hello, I'm Yeray
 
-I'm a software engineer living and working in London. I do consultancy helping companies on their web projects where I'm comfortable at in backend and frontend.
+I'm a full stack software engineer based in London, UK. I work as a freelancer helping companies develop maintainable and scalable projects.
 
-I work primarily in Python and Javascript and have experience with Ruby, Objective-C and C#, but mostly I love clean, maintanable code.
+I code primarily in Python and Javascript and have experience in Ruby, Objective-C, or C#, but most of all I love clean code.
 
-I also write about code, usually articles that help people get started on certain technologies or practices that I've struggled or am passionate about. Have look at the [blog](/) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
+I also like to write about code, usually articles that help people get started on certain technologies or practices that I've struggled with or am passionate about. Have look at the [blog](/) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
 
 ## Projects
 
