@@ -93,10 +93,10 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: $brand-color;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
-    color: $brand-color;
+    color: darken($brand-color, 33%);
     text-decoration: underline;
   }
 

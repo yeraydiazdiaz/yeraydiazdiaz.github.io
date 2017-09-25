@@ -13,4 +13,4 @@ Except it isn't quite there yet, concurrent programming is hard and while corout
 
 Good news is all of that is possible in *asyncio*. Bad news is it's not always immediately obvious what wrong and how to fix it. Here are a few patterns I've noticed while working with *asyncio*.
 
-Continue reading [*Asyncio Coroutine Patterns: Beyond await* on Medium](https://medium.com/python-pandemonium/asyncio-coroutine-patterns-beyond-await-a6121486656f)
+![Medium](/assets/medium-50px.png) **[Continue reading *Asyncio Coroutine Patterns: Beyond await* on Medium](https://medium.com/python-pandemonium/asyncio-coroutine-patterns-beyond-await-a6121486656f)**
