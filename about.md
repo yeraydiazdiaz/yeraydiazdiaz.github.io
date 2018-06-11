@@ -18,6 +18,7 @@ I also like to write about code, usually articles that help people get started o
 
 Here's a quick summary of my personal projects, you can find more on my [Github profile][github]:
 
+- [Lunr.py](https://readthedocs.org/projects/lunr/),  A Python implementation of [Lunr.js](https://lunrjs.com/), aiming to bring the simple and powerful full text search capabilities of Lunr.js into Python guaranteeing results as close as the original implementation as possible.
 - [Tailsocket](https://github.com/yeraydiazdiaz/tailsocket), a WebSocket application to tail files to the browser. Using [Tornado](http://tornadoweb.org/), [asyncio](https://docs.python.org/3/library/asyncio.html) and [React](https://facebook.github.io/react/) for the frontend.
 - [Tornado H2](https://github.com/yeraydiazdiaz/tornado_h2), an HTTP/2 server integrating [hyper-h2](https://python-hyper.org/h2/en/stable/) with [Tornado](http://tornadoweb.org/).
 - [A collection of Jupyter notebooks](https://github.com/yeraydiazdiaz/notebooks) with Python examples and insights I've found interesting.
