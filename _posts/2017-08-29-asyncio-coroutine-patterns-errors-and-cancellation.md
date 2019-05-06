@@ -17,4 +17,6 @@ If you are really new to *asyncio* I recommend having a read through my very fir
 
 I will be continuing with the examples using the Hacker News API and also be using the async/await syntax introduced Python 3.5+ and all example code is available in the Github repo for this series.
 
-![Medium](/assets/medium-50px.png) **[Continue reading *Asyncio Coroutine Patterns: Errors and Cancellation* on Medium](https://medium.com/@yeraydiazdiaz/asyncio-coroutine-patterns-errors-and-cancellation-3bb422e961ff)**
+<div markdown="1" class="medium">
+**[Continue reading *Asyncio Coroutine Patterns: Errors and Cancellation* on Medium](https://medium.com/@yeraydiazdiaz/asyncio-coroutine-patterns-errors-and-cancellation-3bb422e961ff)**
+</div>

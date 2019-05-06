@@ -13,4 +13,6 @@ I heard you're on Rails now, looking for some quick answers?
 
 Yeah, I'm your man, got them right here.
 
-![Medium](/assets/medium-50px.png) **[Continue reading *Django/Rails cheat sheet* on Medium](https://medium.com/p/django-rails-cheat-sheet-50adf2441913)**
+<div markdown="1" class="medium">
+**[Continue reading *Django/Rails cheat sheet* on Medium](https://medium.com/p/django-rails-cheat-sheet-50adf2441913)**
+</div>

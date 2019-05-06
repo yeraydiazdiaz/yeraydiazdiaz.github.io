@@ -3,7 +3,7 @@
  */
 .highlight {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  margin: 1em 0;
   border-radius: 3px;
   background-color: #f8f8f8;
   @extend %vertical-rhythm;
@@ -11,6 +11,15 @@
   // .highlighter-rouge & {
   //   background: #eef;
   // }
+
+  pre code {
+    @include relative-font-size(0.666);
+    display: block;
+
+    > * {
+      margin-bottom: 0;
+    }
+  }
 
   .c     { color: #998; font-style: italic } // Comment
   .err   { color: #a61717; background-color: #e3d2d2 } // Error

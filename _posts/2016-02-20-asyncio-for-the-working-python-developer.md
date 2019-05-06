@@ -11,4 +11,5 @@ I remember distinctly the moment where I thought, “Wow, that's slow, I bet if 
 
 Then I found [asyncio](https://docs.python.org/dev/library/asyncio.html), and everything changed.
 
-![Medium](/assets/medium-50px.png) **[Continue reading *AsyncIO for the Working Python Developer* on Medium](https://hackernoon.com/asyncio-for-the-working-python-developer-5c468e6e2e8e)**
+<div markdown="1" class="medium">**[Continue reading *AsyncIO for the Working Python Developer* on Medium](https://hackernoon.com/asyncio-for-the-working-python-developer-5c468e6e2e8e)**
+</div>

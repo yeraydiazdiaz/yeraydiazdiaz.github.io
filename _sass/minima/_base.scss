@@ -69,14 +69,6 @@ ul, ol {
   margin-left: $spacing-unit;
 }
 
-li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
-}
-
-
 
 /**
  * Headings
@@ -154,6 +146,10 @@ pre {
   }
 }
 
+strong {
+  font-weight: bold;
+}
+
 
 
 /**
@@ -176,6 +172,14 @@ pre {
   }
 }
 
+.article {
+  @media screen and (min-width: $on-desktop) {
+    max-width: -webkit-calc(#{$content-width-desktop} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width-desktop} - (#{$spacing-unit}));
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
 
 
 /**
