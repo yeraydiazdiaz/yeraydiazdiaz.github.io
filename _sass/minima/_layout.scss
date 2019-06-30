@@ -238,6 +238,14 @@
     }
   }
 
+  h1 {
+    @include relative-font-size(2.5);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(2);
+    }
+  }
+
   h2 {
     @include relative-font-size(2);
 
@@ -328,6 +336,13 @@
   .about {
     display: block;
   }
+}
+
+.page {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
 }
 
 .medium {
