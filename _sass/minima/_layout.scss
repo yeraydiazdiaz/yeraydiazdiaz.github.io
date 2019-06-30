@@ -226,10 +226,9 @@
   margin-bottom: $spacing-unit;
 
   @media screen and (min-width: $on-desktop) {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-    justify-content: space-evenly;
+    padding: 0 1em;
+    max-width: 80%;
+    margin: auto;
   }
 
   #text {

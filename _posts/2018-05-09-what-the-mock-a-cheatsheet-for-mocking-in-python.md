@@ -16,5 +16,5 @@ However, unittest.mock is not particularly intuitive.
 I've found myself many times wondering why my go-to recipe does not work for a particular case, so I've put together this cheatsheet to help myself and others get mocks working quickly.
 
 <div markdown="1" class="medium">
-**[Continue reading *What the mock? — A cheatsheet for mocking in Python* on Medium](https://medium.com/@yeraydiazdiaz/asyncio-coroutine-patterns-errors-and-cancellation-3bb422e961ff)**
+**[Continue reading *What the mock? — A cheatsheet for mocking in Python* on Medium](https://medium.com/@yeraydiazdiaz/what-the-mock-cheatsheet-mocking-in-python-6a71db997832)**
 </div>
