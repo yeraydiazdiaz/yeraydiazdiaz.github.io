@@ -25,7 +25,7 @@ github_username:  yeraydiazdiaz
 medium_username:  yeraydiazdiaz
 excerpt_separator: <!--more-->
 google_analytics: UA-102576026-1
-permalink: /:categories/:title
+permalink: /blog/:title
 
 # Build settings
 markdown: kramdown
