@@ -2,6 +2,7 @@
 layout: page
 title: About me
 permalink: /
+description: "I'm a freelance software engineer based in London, UK. I write code and about code."
 ---
 
 <div markdown="1" class="about">
