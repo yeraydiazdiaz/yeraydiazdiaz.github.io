@@ -5,7 +5,7 @@
 
   <title>Personal site of Yeray Díaz Díaz - {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-
+  {% include twitter.html %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
   <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab:300">
