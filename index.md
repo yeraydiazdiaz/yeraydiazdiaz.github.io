@@ -11,13 +11,13 @@ permalink: /
 
 I'm a software engineer based in London, UK. I work as a freelancer helping companies develop maintainable and scalable projects.
 
-I code primarily in Python and Javascript and have experience in Ruby, Objective-C, and C#, but most of all I love clean code.
+I code primarily in Python and JavaScript and have experience in Ruby, Objective-C, and C#, but most of all I love clean code.
 
 I'm a moderator and contributor on [PyPI.org](https://pypi.org), co-organizer of the [London Python Meetup](https://www.meetup.com/LondonPython/) and also like to write about code, usually articles that help people get started on certain technologies or practices that I've struggled with or am passionate about. Have look at the [blog](/blog/) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
 
 ## Projects
 
-Here's a quick summary of my personal projects, you can find more on my [Github profile][github]:
+Here's a quick summary of my personal projects, you can find more on my [GitHub profile][github]:
 
 - [Lunr.py](https://readthedocs.org/projects/lunr/), a Python implementation of [Lunr.js](https://lunrjs.com/), aiming to bring the simple and powerful full text search capabilities of Lunr.js into Python.
 - [Futureproof](https://github.com/yeraydiazdiaz/futureproof), a thin wrapper over concurrent.futures aiming to solve common pitfalls and usability problems.
@@ -28,7 +28,7 @@ Here's a quick summary of my personal projects, you can find more on my [Github 
 
 ## Contact
 
-You can find me on [Twitter][twitter], [Github][github] and [Keybase](https://keybase.io/yeray) or [send me an email](mailto:{{ site.email }}).
+You can find me on [Twitter][twitter], [GitHub][github] and [Keybase](https://keybase.io/yeray) or [send me an email](mailto:{{ site.email }}).
 
 [twitter]: https://twitter.com/{{ site.twitter_username }}
 [github]: https://github.com/{{ site.github_username }}
