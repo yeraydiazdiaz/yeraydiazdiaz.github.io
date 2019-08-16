@@ -2,8 +2,8 @@
 layout: post
 title:  "Asyncio Coroutine Patterns: Beyond await"
 date:   2017-06-03 18:26:51 +0100
-categories: blog
-tags: python asyncio
+categories: python asyncio
+tags: python asyncio python3
 image: asyncio-coroutine-patterns.jpg
 ---
 

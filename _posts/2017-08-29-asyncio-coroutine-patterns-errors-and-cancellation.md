@@ -2,8 +2,8 @@
 layout: post
 title:  "Asyncio Coroutine Patterns: Errors and Cancellation"
 date:   2017-08-29 14:08:51 +0100
-categories: blog
-tags: python asyncio
+categories: python asyncio
+tags: python asyncio python3
 image: asyncio-coroutine-patterns-errors-and-cancellation.jpg
 ---
 
