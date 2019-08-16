@@ -27,11 +27,11 @@ But I’ve found there’s a lot differences in naming and workflow coming from 
 
 Rails and Django are really quite similar, they are both MVC-type web frameworks so many of the concepts are the same. In a nutshell:
 
-> Django’s **models** are Rails’s **ActiveRecord models**
-> Django’s **views** are Rails’s **controller actions**
-> Django’s **templates** are Rails’s **views**
-> Django’s **URLs** are Rails’s **routes**
-> Django is **explicit** Rails is **implicit** (Convention over configuration)
+- Django’s **models** are Rails’s **ActiveRecord models**
+- Django’s **views** are Rails’s **controller actions**
+- Django’s **templates** are Rails’s **views**
+- Django’s **URLs** are Rails’s **routes**
+- Django is **explicit** Rails is **implicit** (Convention over configuration)
 
 ## Models
 

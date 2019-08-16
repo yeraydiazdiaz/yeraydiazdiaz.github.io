@@ -281,6 +281,15 @@
     }
   }
 
+  hr {
+    margin: 2em auto;
+    width: 50%;
+    border: 0 none;
+    border-top: 2px dashed $grey-color-light;
+    background: none;
+    height: 0;
+}
+
   p img {
     padding: 2em 1em;
   }
