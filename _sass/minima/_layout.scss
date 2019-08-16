@@ -217,7 +217,10 @@
   margin-bottom: 2em;
 
   img {
+    max-width: 100%;
+    @media screen and (min-width: $on-widescreen) {
       max-width: $content-width * 1.5;
+    }
   }
 
   @include media-query($on-desktop) {
@@ -231,9 +234,6 @@
   margin-bottom: $spacing-unit;
 
   @media screen and (min-width: $on-desktop) {
-    // padding: 0 1em;
-    // max-width: 80%;
-    // margin: auto;
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-start;
@@ -241,8 +241,10 @@
   }
 
   #text {
+    width: 100%;
     max-width: $on-laptop;
     @media screen and (min-width: $on-desktop) {
+      width: 60%;
       padding: 0rem 1rem;
     }
   }
