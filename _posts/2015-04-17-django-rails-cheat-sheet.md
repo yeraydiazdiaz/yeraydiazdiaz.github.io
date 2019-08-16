@@ -2,7 +2,7 @@
 layout: post
 title:  "Django/Rails cheat sheet"
 date:   2015-04-17 15:44:39 +0100
-categories: django rails
+categories: python django
 tags: django rails
 image: django-rails-cheat-sheet.jpg
 ---
