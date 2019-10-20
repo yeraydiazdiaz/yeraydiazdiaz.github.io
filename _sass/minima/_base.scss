@@ -106,11 +106,13 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
+  background-color: #f2f2f2;
+  color: $grey-color-dark;
   border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
+  padding: 0.5em 1em;
   @include relative-font-size(1.125);
   letter-spacing: -1px;
+  font-weight: 300;
   font-style: italic;
 
   > :last-child {
@@ -213,4 +215,21 @@ strong {
   li + li {
     padding-top: 5px;
   }
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+  margin: 2em 0;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
