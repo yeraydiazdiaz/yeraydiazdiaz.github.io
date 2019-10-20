@@ -23,6 +23,10 @@ If you are really new to *asyncio* I recommend having a read through my very fir
 
 <!--more-->
 
+<div class="note">
+<a href="https://medium.com/@yeraydiazdiaz/asyncio-coroutine-patterns-errors-and-cancellation-3bb422e961ff" target="_blank"><em>Asyncio Coroutine Patterns: Errors and Cancellation</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
+</div>
+
 I will be continuing with the examples using the [Hacker News API](https://github.com/HackerNews/API) and also be using the async/await syntax introduced Python 3.5+ and all example code is available in the [Github repo for this series](https://github.com/yeraydiazdiaz/asyncio-coroutine-patterns).
 
 Let’s get to it!

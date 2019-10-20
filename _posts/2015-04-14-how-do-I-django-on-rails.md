@@ -21,6 +21,10 @@ But fate has brought you to Rails now, and you feel clumsy, slow, googling every
 
 <!--more-->
 
+<div class="note">
+<a href="https://medium.com/@yeraydiazdiaz/how-do-i-django-in-rails-c2d3b87af6c8" target="_blank"><em>How do I Django on Rails?</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
+</div>
+
 I’ve been there and it’s not fun. The good thing is that Rails has been used and loved for a long time, there’s a lot of really nice resources out there. My two favourites are the official Rails [guides](http://guides.rubyonrails.org/) and [API documentation](http://api.rubyonrails.org/).
 
 But I’ve found there’s a lot differences in naming and workflow coming from Django that can be a pain to research. So this is my attempt to make your journey easier.

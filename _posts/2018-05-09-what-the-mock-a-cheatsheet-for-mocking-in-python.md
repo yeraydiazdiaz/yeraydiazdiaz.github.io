@@ -23,6 +23,10 @@ I’ve found myself many times wondering why my go-to recipe does not work for a
 
 <!--more-->
 
+<div class="note">
+<a href="https://medium.com/@yeraydiazdiaz/what-the-mock-cheatsheet-mocking-in-python-6a71db997832" target="_blank"><em>What the mock? — A cheatsheet for mocking in Python</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
+</div>
+
 You can find the code examples in the [article’s Github repository](https://github.com/yeraydiazdiaz/wtmock). I’ll be using Python 3.6, if you’re using 3.2 or below you’ll need to use the [mock PyPI package](https://pypi.org/project/mock/).
 
 The examples are written using `unittest.TestCase` classes for simplicity in executing them without dependencies, but you could write them as functions using [`pytest`](https://docs.pytest.org/en/latest/) almost directly, `unittest.mock` will work just fine. If you are a pytest user though I encourage you to have a look at the excellent [pytest-mock library](https://github.com/pytest-dev/pytest-mock/).

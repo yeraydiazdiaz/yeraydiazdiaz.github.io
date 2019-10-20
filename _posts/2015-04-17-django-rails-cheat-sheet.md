@@ -21,6 +21,10 @@ Yeah, I'm your man, got them right here.
 
 <!--more-->
 
+<div class="note">
+<a href="https://medium.com/@yeraydiazdiaz/django-rails-cheat-sheet-50adf2441913" target="_blank"><em>Django/Rails cheat sheet</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
+</div>
+
 ## ORM
 
 I’m gonna be straight with you, Django’s ORM is nicer than Rails’s.
