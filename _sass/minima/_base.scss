@@ -234,9 +234,9 @@ strong {
 }
 
 .note {
-  background-color: #f8f8d4;
+  background-color: $note-color;
   color: $grey-color-dark;
-  border-left: 4px solid $grey-color-light;
+  border-left: 3px solid $grey-color;
   padding: 0.5em 1em;
   @include relative-font-size(0.9);
   font-weight: 300;

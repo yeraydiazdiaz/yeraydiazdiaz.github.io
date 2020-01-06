@@ -2,7 +2,9 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
   {% include head.html %}
-
+  {% if page.applause %}
+  <link rel="stylesheet" href="/assets/applause-button.css" />
+  {% endif %}
   <body>
 
     {% include header.html %}
@@ -27,6 +29,7 @@
 
         <div class="post-image">
           <img src="{{ site.url }}/assets/{{ page.image }}" />
+          <div class="caption">{{ page.caption }}</div>
         </div>
 
         <div class="wrapper article">
@@ -75,6 +78,9 @@
         }
       };
     </script>
+  {% if page.applause %}
+    <script src="/assets/applause-button.js"></script>
+  {% endif %}
 
     {% include footer.html %}
 

@@ -214,19 +214,17 @@
 
 .post-image {
   text-align: center;
-  margin-bottom: 2em;
-
-  img {
-    max-width: 100%;
-    @media screen and (min-width: $on-widescreen) {
-      max-width: $content-width * 1.5;
-    }
+  margin: 0 auto 2em auto;
+  max-width: 100%;
+  @media screen and (min-width: $on-widescreen) {
+    max-width: $content-width * 1.5;
   }
 
-  @include media-query($on-desktop) {
-    img {
-      max-width: 100%;
-    }
+  .caption {
+    @include relative-font-size(0.66);
+    text-align: right;
+    color: $grey-color-light;
+    margin: 0.3em 1em 0 0;
   }
 }
 
@@ -258,7 +256,9 @@
   }
 
   h2 {
-    @include relative-font-size(2);
+    @include relative-font-size(1.8);
+    line-height: 1.2em;
+    margin-top: 1em;
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.75);
@@ -266,7 +266,7 @@
   }
 
   h3 {
-    @include relative-font-size(1.625);
+    @include relative-font-size(1.5);
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.375);
@@ -320,10 +320,14 @@
   .profile-pic {
     padding: 0;
     float:right;
-    max-height: 175px;
+    max-height: 5em;
     margin: 0.5em;
     border-radius: 50%;
     border: 1px solid black;
+
+    @media screen and (min-width: $on-desktop) {
+      max-height: 175px;
+    }
   }
 
   .sticky {
@@ -357,35 +361,39 @@
     display: block;
   }
 
-  .sticky {
-    @media screen and (min-width: $on-desktop) {
-      position: sticky;
-      top: 1rem;
-    }
-  }
-
-  #markdown-toc {
-    @include relative-font-size(0.85);
-    border: 1px solid $grey-color-light;
-    padding: 0.5em 2em;
-    margin: 0 0 1em 0;
-    max-width: 100%;
-    flex: 0 0 auto;
+  .feedback {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
 
     @media screen and (min-width: $on-desktop) {
-      margin-left: 1em;
-      margin-right: 0.5rem;
-      width: 15em;
-      flex: 1 1 auto;
+      // on desktop flow with the sticky TOC
+      position: initial;
+      margin: 5rem 0 0 45%;
     }
 
-    ul {
-      margin-bottom: 0;
-    }
-  }
+    applause-button {
+      height: 2.5rem;
+      width: 2.5rem;
+      background: white;
+      border-radius: 2em;
 
-  .about {
-    display: block;
+      @media screen and (min-width: $on-desktop) {
+        height: 3rem;
+        width: 3rem;
+      }
+
+      .count-container {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.8rem;
+        color: #424242;  // this matches the computed $grey-color-dark
+        top: -55%;  // for some reason this overlaps with the button on the default -40%
+
+        @media screen and (min-width: $on-desktop) {
+          top: -45%;  // for some reason this overlaps with the button on the default -40%
+        }
+      }
+    }
   }
 }
 
