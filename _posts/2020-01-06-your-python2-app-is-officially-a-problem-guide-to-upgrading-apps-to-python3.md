@@ -12,7 +12,7 @@ applause: true
 <div markdown="1" class="sticky">
 * TOC
 {:toc}
-<div class="feedback"><applause-button color="#424242" multiclap="true" /></div>
+<div class="feedback"><applause-button color="#424242" /></div>
 </div>
 
 <div markdown="1" id="text">
