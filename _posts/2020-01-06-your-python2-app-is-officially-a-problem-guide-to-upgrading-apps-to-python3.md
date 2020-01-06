@@ -25,7 +25,7 @@ I've been there and it's not great. It's not just the changes to the code, there
 
 I had to go through this process recently for a 140k lines of code app first and a couple times more for smaller services and, as one does, I worked out a system which I now present to you in guide form.
 
-You will not find an exhaustive list of syntax differences between Python 2 and 3 in this guide. This is a pragmatic, hands-on workflow to upgrade your app to Python 3 that worked for me, hopefully it will help you too.
+You will not find an exhaustive list of syntax differences between Python 2 and 3 in this guide, if that's what you're looking for I recommend the free [*Supporting Python 3*](http://python3porting.com/) book. This is a pragmatic, hands-on workflow to upgrade your app to Python 3 that worked for me, hopefully it will help you too.
 
 <!--more-->
 
@@ -34,6 +34,8 @@ You will not find an exhaustive list of syntax differences between Python 2 and 
 Be warned, this is a fairly long process depending on the size of the codebase. If the code is being actively worked on you want to merge as many steps compatible with Python 2 as possible to avoid having one big `python3` branch that you'll have to merge changes onto, explain changes to your team and deploy.
 
 I suggest having a quick meeting with your team to get on the same page in terms of Python 3 and how it will impact your code. Leaving comments with a common prefix, something like `# PY3: ...`, in places where the idioms must or could change between versions was quite helpful for me. That way you can quickly search for that string and apply the necessary changes later on.
+
+You may also want to consider [`pyupgrade`](https://github.com/asottile/pyupgrade) by Anthony Sottile, which can automatically upgrade Python 2 syntax.
 
 Ready? Let's get to it!
 
@@ -105,7 +107,9 @@ It's now time to update the code itself!
 
 Good news is Python 3 has been around long enough that mature code upgrading tools are available to ease this process.
 
-I chose [`python-future`](http://python-future.org/), specifically the [`futurize` tool](http://python-future.org/automatic_conversion.html), which separates the process in three stages:
+[`six`](https://pypi.org/project/six/) is the de facto library for Python 2/3 compatibility and it's used via the [`Modernize`](https://python-modernize.readthedocs.io/en/latest/) tool. I, however, chose [`python-future`](http://python-future.org/), specifically the [`futurize` tool](http://python-future.org/automatic_conversion.html). Brett Cannon [wrote an excellent explanation of the differences](https://docs.python.org/3/howto/pyporting.html#update-your-code) if you're curious, the whole article is well worth a read.
+
+`futurize` separates the process in three stages:
 
 1. "Safe" fixes, which performs fairly straightforward changes using Python's `2to3` and some custom changes without making the code require the library itself.
 2. Wrapper fixes, which performs more complex changes using wrappers from the library, for example installing standard library aliases.
@@ -211,7 +215,11 @@ Hopefully you'll have a series of environments where changes to can be tested be
 
 Fair warning, there will be a _lot_ of blaming Python 3, and you will get pinged quite a bit more about errors than you used to, but things will quiet down after a while.
 
-Take this time between fixing errors to clean up some of the Python 2/3 compatibility elements from `future` as you won't be needing those anymore. A simple search and replace with an empty string worked quite well for me.
+## Step 7: Clean it up
+
+In this time between fixing errors you can clean up some of the Python 2/3 compatibility elements that `future` introduced as you won't be needing those anymore. A simple search and replace with an empty string worked well for me.
+
+If you used `Modernize` and `six` you can take advantage of [`pyupgrade`'s removing `six` compatibility code](https://github.com/asottile/pyupgrade#remove-six-compatibility-code) option and a [`__future__` removal option](https://github.com/asottile/pyupgrade#__future__-import-removal) that can come in handy.
 
 ## Congratulations, you are now in Python 3!
 
