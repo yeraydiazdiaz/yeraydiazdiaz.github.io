@@ -14,7 +14,7 @@ I'm a software engineer based in London, UK. I work as a freelancer helping comp
 
 I code primarily in Python and JavaScript and have experience in Ruby, Objective-C, and C#, but most of all I love clean code.
 
-I'm a moderator and contributor on [PyPI.org](https://pypi.org), co-organizer of the [London Python Meetup](https://www.meetup.com/LondonPython/) and also like to write about code, usually articles that help people get started on certain technologies or practices that I've struggled with or am passionate about. Have look at the [blog](/blog/) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
+I'm a moderator and contributor on [PyPI.org](https://pypi.org), co-organizer of the [London Python Meetup](https://www.meetup.com/LondonPython/) and also like to write about code, usually articles that help people get started on certain technologies or practices that I've struggled with or am passionate about. Have look at the [blog](/blog) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
 
 ## Projects
 
