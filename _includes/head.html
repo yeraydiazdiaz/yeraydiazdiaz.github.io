@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Personal site of Yeray Díaz Díaz - {% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title | escape }} - Yeray Díaz Díaz{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.short_description %}{{ page.short_description | strip_html | truncate: 160 | escape }}{% else %}{{ page.title | strip | escape }}{% endif %}">
 {% include twitter.html %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
