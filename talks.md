@@ -2,6 +2,7 @@
 layout: default
 title: Talks
 description: "Talks I've given"
+nav: true
 ---
 
 # Import as an anti-pattern: Demystifying Dependency Injection in Python
