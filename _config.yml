@@ -39,6 +39,13 @@ highlighter: rouge
 minima:
   date_format: "%-d %b %Y"
 
+defaults:
+  -
+    scope:
+      path: "404.html"
+    values:
+      sitemap: false
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
