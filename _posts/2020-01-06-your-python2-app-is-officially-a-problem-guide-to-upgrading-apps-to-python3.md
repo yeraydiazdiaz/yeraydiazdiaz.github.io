@@ -7,6 +7,8 @@ tags: python
 image: python-clock.png
 caption: <a href="https://pythonclock.org">pythonclock.org</a>
 applause: true
+short_description: A guide on how to upgrade your application from Python 2.7 to Python3 using modern code porting and dependency managing tools to guarantee a successful transition.
+keywords: "python, guide, 2.7, python3, application, upgrade, dependency, tests, code, compatibility"
 ---
 
 <div markdown="1" class="sticky">

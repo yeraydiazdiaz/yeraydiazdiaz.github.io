@@ -5,6 +5,8 @@ date:   2017-08-29 14:08:51 +0100
 categories: python asyncio
 tags: python asyncio python3
 image: asyncio-coroutine-patterns-errors-and-cancellation.jpg
+short_description: Dig deeper into Python's concurrency library, asyncio. This tutorial covers errors and cancellation of tasks and futures with a hands on example performing concurrent HTTP requests.
+keywords: "python, tutorial, asyncio, concurrency, errors, futures, cancellation, task, coroutine"
 ---
 
 <div markdown="1" class="sticky">

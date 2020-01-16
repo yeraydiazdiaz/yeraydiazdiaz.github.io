@@ -5,6 +5,8 @@ date:   2015-04-17 15:44:39 +0100
 categories: python django
 tags: django rails
 image: django-rails-cheat-sheet.jpg
+short_description: A more detailed list of for Django developers working in Rails, covering the differences in ORM, tasks, forms and more.
+keywords: "python, ruby, tutorial, django, rails, cheatsheet, orm, tasks, forms"
 ---
 
 <div markdown="1" class="sticky">

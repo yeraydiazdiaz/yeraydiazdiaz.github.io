@@ -5,6 +5,8 @@ date:   2015-04-14 15:44:39 +0100
 categories: python django
 tags: django rails
 image: how-do-i-django-on-rails.jpg
+short_description: A tutorial for Django developers working in Rails, covering the differences in design and mapping concepts like models, controller vs views, templates and routing.
+keywords: "python, ruby, tutorial, django, rails, models, controllers, views, templates, routing"
 ---
 
 <div markdown="1" class="sticky">

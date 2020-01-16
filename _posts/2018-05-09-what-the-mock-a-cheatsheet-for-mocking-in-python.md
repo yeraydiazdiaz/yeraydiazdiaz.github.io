@@ -5,6 +5,8 @@ date:   2018-05-09 10:48:19 +0100
 categories: python testing
 tags: unit testing python mocking tools
 image: what-the-mock-a-cheatsheet-for-mocking-in-python.jpg
+short_description: A tutorial on the mock library in Python, unittest.mock, to create reliable test mocks, doubles and stubs on your tests and learn to work around common problems and pitfalls.
+keywords: "python, mock, test, stubs, doubles, assert, unit, integration"
 ---
 
 <div markdown="1" class="sticky">

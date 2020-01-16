@@ -5,6 +5,8 @@ date:   2017-06-03 18:26:51 +0100
 categories: python asyncio
 tags: python asyncio python3
 image: asyncio-coroutine-patterns.jpg
+short_description: This tutorial covers concurrency patterns in Python's asyncio and will help you understand how to manage coroutines and tasks successfully with a hands on example using HTTP requests.
+keywords: "python, tutorial, asyncio, concurrency, patterns, task, coroutine"
 ---
 
 <div markdown="1" class="sticky">
