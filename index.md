@@ -6,7 +6,7 @@ description: "I'm a freelance software engineer based in London, UK. I write cod
 ---
 
 <div markdown="1" class="about">
-<img src="{{ site.url }}/assets/yeray.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
+<img src="/assets/yeray.jpg" alt="{{ site.author }} profile pic" class="profile-pic" />
 
 # Hello, I'm Yeray
 
