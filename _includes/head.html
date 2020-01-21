@@ -17,6 +17,45 @@
   <link rel="stylesheet" href="/assets/applause-button.css" />
   {% endif %}
 
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Article",
+      "headline": "{{ page.title }}",
+
+      "image": {
+        "@type": "ImageObject",
+        "url": "/assets/{{ page.image }}",
+        "width": 1920,
+        "height": 1080
+      },
+
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}/assets/{{ page.image }}"
+      },
+      "datePublished": "{{ page.date }}",
+      "dateModified": "{% if page.last_modified %}{{ page.last_modified }}{% else %}{{ page.date }}{% endif %}",
+       "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.author }}",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "/assets/yeray.jpg",
+          "width": 60,
+          "height": 60
+        }
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "{{ site.author }}",
+        "url": "{{ site.url }}",
+        "logo": "/assets/yeray.jpg"
+      },
+      "description": "{% if page.short_description %}{{ page.short_description }}{% else %}{{ page.title | strip | escape }}{% endif %}"
+    }
+    </script>
+
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}
