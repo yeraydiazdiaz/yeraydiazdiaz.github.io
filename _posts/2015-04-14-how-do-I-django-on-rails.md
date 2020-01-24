@@ -7,6 +7,7 @@ tags: django rails
 image: how-do-i-django-on-rails.jpg
 short_description: A tutorial for Django developers working in Rails, covering the differences in design and mapping concepts like models, controller vs views, templates and routing.
 keywords: "python, ruby, tutorial, django, rails, models, controllers, views, templates, routing"
+canonical_url: https://medium.com/@yeraydiazdiaz/how-do-i-django-in-rails-c2d3b87af6c8
 ---
 
 <div markdown="1" class="sticky">
@@ -24,7 +25,7 @@ But fate has brought you to Rails now, and you feel clumsy, slow, googling every
 <!--more-->
 
 <div class="note">
-<a href="https://medium.com/@yeraydiazdiaz/how-do-i-django-in-rails-c2d3b87af6c8" target="_blank"><em>How do I Django on Rails?</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
+<a href="{{ page.canonical_url }}" target="_blank"><em>How do I Django on Rails?</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
 </div>
 
 I’ve been there and it’s not fun. The good thing is that Rails has been used and loved for a long time, there’s a lot of really nice resources out there. My two favourites are the official Rails [guides](http://guides.rubyonrails.org/) and [API documentation](http://api.rubyonrails.org/).

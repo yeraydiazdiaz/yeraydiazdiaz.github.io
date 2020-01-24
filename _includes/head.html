@@ -10,8 +10,8 @@
 {% include twitter.html %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:700">
-  <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab:300i,300">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Zilla+Slab:300i,300">
+  <link rel="canonical" href="{% if page.canonical_url %}{{ page.canonical_url }}{% else %}{{ page.url | replace:'index.html','' | absolute_url }}{% endif %}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
   {% if page.applause %}
   <link rel="stylesheet" href="/assets/applause-button.css" />

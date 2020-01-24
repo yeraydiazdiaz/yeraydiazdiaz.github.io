@@ -7,6 +7,7 @@ tags: django rails
 image: django-rails-cheat-sheet.jpg
 short_description: A more detailed list of for Django developers working in Rails, covering the differences in ORM, tasks, forms and more.
 keywords: "python, ruby, tutorial, django, rails, cheatsheet, orm, tasks, forms"
+canonical_url: https://medium.com/@yeraydiazdiaz/django-rails-cheat-sheet-50adf2441913
 ---
 
 <div markdown="1" class="sticky">
@@ -24,7 +25,7 @@ Yeah, I'm your man, got them right here.
 <!--more-->
 
 <div class="note">
-<a href="https://medium.com/@yeraydiazdiaz/django-rails-cheat-sheet-50adf2441913" target="_blank"><em>Django/Rails cheat sheet</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
+<a href="{{ page.canonical_url }}" target="_blank"><em>Django/Rails cheat sheet</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
 </div>
 
 ## ORM

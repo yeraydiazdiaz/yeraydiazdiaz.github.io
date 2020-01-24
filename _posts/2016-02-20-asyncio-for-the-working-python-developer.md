@@ -9,6 +9,7 @@ image: asyncio-for-the-working-python-developer.jpg
 short_description: A hands on tutorial on Python's asyncio explaining concurrency with simple examples working up to making concurrent HTTP calls.
 keywords: "python, tutorial, asyncio, async, example, simple, http, concurrency, task, future"
 applause: true
+canonical_url: https://medium.com/@yeraydiazdiaz/asyncio-for-the-working-python-developer-5c468e6e2e8e
 ---
 
 <div markdown="1" class="sticky">
@@ -22,6 +23,10 @@ I remember distinctly the moment where I thought, “Wow, that's slow, I bet if 
 Then I found [asyncio](https://docs.python.org/dev/library/asyncio.html), and everything changed.
 
 <!--more-->
+
+<div class="note">
+<a href="{{ page.canonical_url }}" target="_blank"><em>Asyncio for the Working Python Developer</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
+</div>
 
 If you don’t know, *asyncio* is the new concurrency module introduced in Python 3.4. It’s designed to use coroutines and futures to simplify asynchronous code and make it almost as readable as synchronous code simply because there are *no callbacks*.
 

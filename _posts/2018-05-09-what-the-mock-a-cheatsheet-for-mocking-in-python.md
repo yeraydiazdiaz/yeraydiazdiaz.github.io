@@ -7,6 +7,7 @@ tags: unit testing python mocking tools
 image: what-the-mock-a-cheatsheet-for-mocking-in-python.jpg
 short_description: A tutorial on the mock library in Python, unittest.mock, to create reliable test mocks, doubles and stubs on your tests and learn to work around common problems and pitfalls.
 keywords: "python, mock, test, stubs, doubles, assert, unit, integration"
+canonical_url: https://medium.com/@yeraydiazdiaz/what-the-mock-cheatsheet-mocking-in-python-6a71db997832
 ---
 
 <div markdown="1" class="sticky">
@@ -26,7 +27,7 @@ I’ve found myself many times wondering why my go-to recipe does not work for a
 <!--more-->
 
 <div class="note">
-<a href="https://medium.com/@yeraydiazdiaz/what-the-mock-cheatsheet-mocking-in-python-6a71db997832" target="_blank"><em>What the mock? — A cheatsheet for mocking in Python</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
+<a href="{{ page.canonical_url }}" target="_blank"><em>What the mock? — A cheatsheet for mocking in Python</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
 </div>
 
 You can find the code examples in the [article’s Github repository](https://github.com/yeraydiazdiaz/wtmock). I’ll be using Python 3.6, if you’re using 3.2 or below you’ll need to use the [mock PyPI package](https://pypi.org/project/mock/).

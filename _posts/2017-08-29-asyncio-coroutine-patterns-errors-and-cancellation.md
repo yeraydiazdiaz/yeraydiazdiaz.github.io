@@ -7,6 +7,7 @@ tags: python asyncio python3
 image: asyncio-coroutine-patterns-errors-and-cancellation.jpg
 short_description: Dig deeper into Python's concurrency library, asyncio. This tutorial covers errors and cancellation of tasks and futures with a hands on example performing concurrent HTTP requests.
 keywords: "python, tutorial, asyncio, concurrency, errors, futures, cancellation, task, coroutine"
+canonical_url: https://medium.com/@yeraydiazdiaz/asyncio-coroutine-patterns-errors-and-cancellation-3bb422e961ff
 ---
 
 <div markdown="1" class="sticky">
@@ -26,7 +27,7 @@ If you are really new to *asyncio* I recommend having a read through my very fir
 <!--more-->
 
 <div class="note">
-<a href="https://medium.com/@yeraydiazdiaz/asyncio-coroutine-patterns-errors-and-cancellation-3bb422e961ff" target="_blank"><em>Asyncio Coroutine Patterns: Errors and Cancellation</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
+<a href="{{ page.canonical_url }}" target="_blank"><em>Asyncio Coroutine Patterns: Errors and Cancellation</em> was first published on Medium</a>, if you'd like to comment or give feedback please do so there.
 </div>
 
 I will be continuing with the examples using the [Hacker News API](https://github.com/HackerNews/API) and also be using the async/await syntax introduced Python 3.5+ and all example code is available in the [Github repo for this series](https://github.com/yeraydiazdiaz/asyncio-coroutine-patterns).
