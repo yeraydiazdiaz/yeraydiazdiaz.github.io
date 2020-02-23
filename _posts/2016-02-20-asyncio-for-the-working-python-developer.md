@@ -8,7 +8,6 @@ tags: python asyncio python3
 image: asyncio-for-the-working-python-developer.jpg
 short_description: A hands on tutorial on Python's asyncio explaining concurrency with simple examples working up to making concurrent HTTP calls.
 keywords: "python, tutorial, asyncio, async, example, simple, http, concurrency, task, future"
-applause: true
 canonical_url: https://medium.com/@yeraydiazdiaz/asyncio-for-the-working-python-developer-5c468e6e2e8e
 ---
 
