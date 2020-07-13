@@ -20,7 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Yeray Díaz Díaz personal site.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://yeray.dev"
-twitter_username: yeray_ee
+twitter_username: yera_ee
 github_username:  yeraydiazdiaz
 medium_username:  yeraydiazdiaz
 excerpt_separator: <!--more-->
