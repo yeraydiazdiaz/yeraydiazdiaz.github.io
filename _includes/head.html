@@ -56,7 +56,7 @@
     }
     </script>
 
-  {% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
+  {% if jekyll.environment == 'production' %}
+  <script async defer data-domain="yeray.dev" src="https://plausible.io/js/plausible.js"></script>
   {% endif %}
 </head>
