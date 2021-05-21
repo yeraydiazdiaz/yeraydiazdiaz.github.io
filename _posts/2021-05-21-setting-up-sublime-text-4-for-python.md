@@ -45,7 +45,7 @@ I will focus this article on setting up Python LSP Server with a set of common p
 2. In your project's virtual environment (you are using a virtual environment, right?)
 
 ```
-pip install python-language-server[all] pyls-black mypy-ls pyls-isort
+pip install python-lsp-server[all] pyls-black mypy-ls pyls-isort
 ```
 
 And any other PyLSP plugins you see fit, these are the ones I use most.
