@@ -71,9 +71,9 @@ And any other PyLSP plugins you see fit, these are the ones I use most.
                 ],
                 "pylsp.plugins.jedi_rename.enabled": true,  // included in pyls
                 // File formatter, invoke via LSP: Format file
-                "pyls.plugins.autopep8.enabled": false,  // enabled by default, use black
-                "pyls.plugins.black.enabled": true,  // from pyls-black
-                "pyls.plugins.mypy_ls.enabled": true,  // from mypy-ls
+                "pylsp.plugins.autopep8.enabled": false,  // enabled by default, use black
+                "pylsp.plugins.black.enabled": true,  // from pyls-black
+                "pylsp.plugins.mypy_ls.enabled": true,  // from mypy-ls
             },
         },
     },
