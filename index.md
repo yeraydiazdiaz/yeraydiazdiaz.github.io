@@ -2,6 +2,7 @@
 layout: page
 title: About me
 permalink: /
+short_description: "Yeray Díaz. Freelance software engineer based in London, UK. I write code and about code, usually about Python and Elixir"
 description: "I'm a freelance software engineer based in London, UK. I write code and about code."
 ---
 
@@ -12,7 +13,7 @@ description: "I'm a freelance software engineer based in London, UK. I write cod
 
 I'm a software engineer based in London, UK. I work as a freelancer helping companies develop maintainable and scalable projects.
 
-I code primarily in Python and JavaScript and have experience in Ruby, Objective-C, and C#, but most of all I love clean code.
+I code primarily in Python and JavaScript and have experience in Elixir, Ruby, Objective-C, and C#, but most of all I love clean code.
 
 I'm a moderator and contributor on [PyPI.org](https://pypi.org) and co-organizer of the [London Python Meetup](https://www.meetup.com/LondonPython/). I also like to write about code, usually articles that help people get started on certain technologies or practices that I've struggled with or am passionate about. Have look at the [blog](/blog) or [my Medium page](https://medium.com/@yeraydiazdiaz/) if you're interested.
 
@@ -29,7 +30,7 @@ Here's a quick summary of my personal projects, you can find more on my [GitHub 
 
 ## Contact
 
-You can find me on [Twitter][twitter], [GitHub][github] and [Keybase](https://keybase.io/yeray) or [send me an email](mailto:{{ site.email }}).
+You can find me on [Twitter][twitter] or [GitHub][github].
 
 [twitter]: https://twitter.com/{{ site.twitter_username }}
 [github]: https://github.com/{{ site.github_username }}
