@@ -28,10 +28,12 @@
           </header>
         </div>
 
+        {% if page.image %}
         <div class="post-image">
-          <img src="{{ site.url }}/assets/{{ page.image }}" />
+          <img src="/assets/{{ page.image }}" />
           <div class="caption">{{ page.caption }}</div>
         </div>
+        {% endif %}
 
         <div class="wrapper article">
           <div class="post-content">
