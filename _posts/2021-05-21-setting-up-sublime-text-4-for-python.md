@@ -7,6 +7,7 @@ tags: python
 image: st4_python.jpg
 short_description: How to setup Sublime Text 4 for Python using Python LSP Server
 keywords: "python sublimetext4"
+last_modified: 2021-05-22 16:45:00 +0000
 ---
 
 <div markdown="1" class="sticky">
@@ -81,6 +82,8 @@ And any other PyLSP plugins you see fit, these are the ones I use most.
 
 ```
 
+Note that `enabled` is `false` in the global LSP settings. This is on purpose to prevent Sublime Text 4 from trying to start an Python LSP Server on all windows. The idea is to only start the server present in each project's virtual environment separately.
+
 {:start="5"}
 5. Save your Sublime Text Project if you haven't yet and edit its configuration as follows:
 
@@ -129,6 +132,22 @@ Make sure you replace `<ABSOLUTE_PATH_TO_YOUR_VENV>` with the absolute path to y
 
 ## Troubleshooting
 
+### LSP failed to start pylsp: index out of range
+
+LSP will attempt to start the command you specified in the project settings. If it fails to start it, a message will pop up with the message:
+
+<img alt="LSP failed to start pylsp" src="/assets/st4/lsp_failed_to_start_pylsp.png" height="250" />
+
+The error "list out of range" is not very descriptive but the reason is that we have not specified a `command` in the LSP settings for the project. Double check that the `command` is a list and is present under `settings` > `LSP` > `pylsp` and is a sibling of `enabled`.
+
+Some users have reported that this error still happens even after setting the command list in the project settings. A work around is to set the command in the LSP global settings and enable it in the project. However, this would require changing the command there every time we change projects, which is not ideal.
+
+### No flake8 linting
+
+If you find things are working but you are not getting flake8 errors, make sure you've set up the `pylsp.plugins.flake8.executable` setting in your project and it's set to the correct absolute path. If it is not set, or if it is incorrect you will not get errors in Sublime Text but simply no linting information.
+
+### Other
+
 If you find some of the plugins are not working or ST4 is showing an error about PyLSP crashing, you may want to add the following lines to the `command` list in the project's config:
 
 ```jsonc
@@ -140,7 +159,7 @@ If you find some of the plugins are not working or ST4 is showing an error about
 ],
 ```
 
-The server should restart on each change to the project's configuration file, but you may need to restart ST4 (luckily it's lightning fast). You should see the output of PyLSP in that log file which will help you debug any problems.
+The server should restart on each change to the project's configuration file, but you may need to restart ST4 (luckily it's lightning fast). You should see the output of PyLSP in that log file which will help you debug any problems. Typical errors include missing dependencies and disabled or incorrect configurations, the logs will include which plugins are active and inactive.
 
 If you find any issues with this setup let me know in [this blog's repo](https://github.com/yeraydiazdiaz/yeray.dev/issues).
 
