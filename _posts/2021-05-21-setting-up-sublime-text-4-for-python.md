@@ -134,7 +134,7 @@ Make sure you replace `<ABSOLUTE_PATH_TO_YOUR_VENV>` with the absolute path to y
 
 ### LSP failed to start pylsp: index out of range
 
-LSP will attempt to start the command you specified in the project settings. If it fails, a message will pop up with the message:
+LSP will attempt to start the command you specified in the project settings. If it fails, you'll get a pop up like this:
 
 <img alt="LSP failed to start pylsp" src="/assets/st4/lsp_failed_to_start_pylsp.png" height="250" />
 
