@@ -33,7 +33,7 @@ I will update this post with any developments in the tools and setup.
 
 I've used Sublime Text for Python since I bought my first ST3 license in 2017. At the time the state-of-the-art way of working in Python was to use [Anaconda](https://github.com/DamnWidget/anaconda) (not to be confused with [Anaconda, the Python distribution](https://anaconda.org/)). Anaconda still works in ST4 but it's unfortunately lacking some maintenance and its approach has been superseded by language servers.
 
-Sublime Text has official support for language servers through its [LSP project](https://lsp.sublimetext.io/) allowing plugins to call into different language servers and render results in ST4, and, of course, Python is no exception.
+Sublime Text supports language servers through the [LSP community project](https://lsp.sublimetext.io/) allowing plugins to call into different language servers and render results in ST4, and, of course, Python is no exception.
 
 There are two main language servers available for ST4: [Pyright](https://github.com/sublimelsp/LSP-pyright) and [Python LSP Server](https://github.com/python-lsp/python-lsp-server/). Pyright is straight forward to set up, simply follow the instructions in the README, but it will only yield static typing information.
 
