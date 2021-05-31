@@ -7,7 +7,7 @@ tags: python
 image: st4_python.jpg
 short_description: How to setup Sublime Text 4 for Python using Python LSP Server
 keywords: "python sublimetext4"
-last_modified: 2021-05-22 16:45:00 +0000
+last_modified: 2021-05-31 13:16:00 +0000
 ---
 
 <div markdown="1" class="sticky">
@@ -33,13 +33,46 @@ I will update this post with any developments in the tools and setup.
 
 I've used Sublime Text for Python since I bought my first ST3 license in 2017. At the time the state-of-the-art way of working in Python was to use [Anaconda](https://github.com/DamnWidget/anaconda) (not to be confused with [Anaconda, the Python distribution](https://anaconda.org/)). Anaconda still works in ST4 but it's unfortunately lacking some maintenance and its approach has been superseded by language servers.
 
-Sublime Text has official support for language servers through its [LSP project](https://lsp.sublimetext.io/) allowing plugins to call into different language servers and render results in ST4, and, of course, Python is no exception.
+Sublime Text does not officially support language servers, however, there is community support via the [LSP project](https://lsp.sublimetext.io/) allowing plugins to call into different language servers and render results in ST4, and, of course, Python is no exception.
 
-There are two main language servers available for ST4: [Pyright](https://github.com/sublimelsp/LSP-pyright) and [Python LSP Server](https://github.com/python-lsp/python-lsp-server/). Pyright is straight forward to set up, simply follow the instructions in the README, but it will only yield static typing information.
+There are two main language servers available for ST4: [`LSP-pyright`](https://github.com/sublimelsp/LSP-pyright), which will perform type checking via [Microsoft's Pyright](https://github.com/microsoft/pyright), and [`LSP-pylsp`](https://github.com/sublimelsp/LSP-pylsp), which is based on [Python LSP Server](https://github.com/python-lsp/python-lsp-server/).
 
-I will focus this article on setting up Python LSP Server with a set of common plugins.
+`LSP-pyright`, will only perform static typing, while `LSP-pylsp` has a plugin system that allows calling to other types of tools like linters and formatters like mypy, black, or isort.
+
+Personally, I don't use Pyright, so I will focus on `LSP-pylsp` and configuring it with a set of common plugins.
 
 ## The setup
+
+`LSP-pylsp` is straight forward to setup as described in its [README](https://github.com/sublimelsp/LSP-pylsp). Once installed go to the LSP-pylsp preferences and add the following configuration:
+
+```jsonc
+{
+    "pylsp.plugins.mypy-ls.enabled": true,
+    "pylsp.plugins.flake8.enabled": true,
+    "pylsp.configurationSources": ["flake8"],
+    "pylsp.plugins.pyls_black.enabled": true,
+}
+```
+
+After restarting Sublime Text, open a project and you should see the following:
+
+- Hovering over a symbol should render information about it with links to its definition and references:
+![Hover over symbol](/assets/st4/st4_hover.gif "Hover over symbol")
+
+- You should see Flake8 and mypy errors as you type by hovering over the warning and error squiggly lines or openin the LSP diagnostics panel with `LSP: Toggle Diagnostics Panel`:
+![Flake8 and mypy errors](/assets/st4/st4_mypy_flake8.gif "Flake8 and mypy errors")
+
+- Invoke `LSP: Format File` to format with Black and isort:
+![Black and isort on format](/assets/st4/st4_format_file.gif "Black and isort on format")
+
+- Invoke `LSP: Rename` to rename a symbol using Jedi
+![Jedi rename symbol](/assets/st4/st4_rename.gif "Jedi rename symbol")
+
+## Manual setup
+
+`LSP-pylsp` installs Python Language Server in ST4's Package Storage directory with the Python interpreter present in your `PATH` environment variable. It then proceeds to create a virtual environment and install its [dependencies](https://github.com/sublimelsp/LSP-pylsp/blob/master/requirements.txt) on it.
+
+While this is likely completely fine for most users, you may want more control over the Python version and the versions of the dependencies, potentially ensuring they match the ones in your project. If that's the case you can setup ST4 and Python LSP Server manually as follows:
 
 1. Install `LSP` using the package manager:
 
@@ -116,31 +149,9 @@ Note that `enabled` is `false` in the global LSP settings. This is on purpose to
 Make sure you replace `<ABSOLUTE_PATH_TO_YOUR_VENV>` with the absolute path to your virtual environment.
 
 {:start="6"}
-6. Test it out in your project:
-
-- Hovering over a symbol should render information about it with links to its definition and references:
-![Hover over symbol](/assets/st4/st4_hover.gif "Hover over symbol")
-
-- You should see Flake8 and mypy errors as you type by hovering over the warning and error squiggly lines or openin the LSP diagnostics panel with `LSP: Toggle Diagnostics Panel`:
-![Flake8 and mypy errors](/assets/st4/st4_mypy_flake8.gif "Flake8 and mypy errors")
-
-- Invoke `LSP: Format File` to format with Black and isort:
-![Black and isort on format](/assets/st4/st4_format_file.gif "Black and isort on format")
-
-- Invoke `LSP: Rename` to rename a symbol using Jedi
-![Jedi rename symbol](/assets/st4/st4_rename.gif "Jedi rename symbol")
+6. You should be able to see the effects described in the setup above.
 
 ## Troubleshooting
-
-### LSP failed to start pylsp: index out of range
-
-LSP will attempt to start the command you specified in the project settings. If it fails, you'll get a pop up like this:
-
-<img alt="LSP failed to start pylsp" src="/assets/st4/lsp_failed_to_start_pylsp.png" height="250" />
-
-The error "list out of range" is not very descriptive but the reason is that we have not specified a `command` in the LSP settings for the project. Double check that the `command` is a list and is present under `settings` > `LSP` > `pylsp` and is a sibling of `enabled`.
-
-Some users have reported that this error still happens even after setting the command list in the project settings. A work around is to set the command in the LSP global settings and enable it in the project. However, this would require changing the command there every time we change projects, which is not ideal.
 
 ### No flake8 linting
 
@@ -174,5 +185,15 @@ You may also want to install the following Sublime Text packages:
 I would like to thank the Spyder IDE team for taking the time to fork and maintain [Python LSP Server](https://github.com/python-lsp/python-lsp-server/) as well as to all the maintainers of the different plugins for PyLSP for adapting to the fork and releasing new versions promptly.
 
 And, of course, the Sublime HQ team for making an awesome text editor.
+
+## Updates
+
+**2021-05-31**
+
+- Added `LSP-pylsp` as main method of setup.
+- Amend incorrect statement that LSP is officially supported by Sublime Text when it's a community project.
+- Remove troubleshooting "index out of range" section which was [fixed recently in LSP](https://github.com/sublimelsp/LSP/commit/12a2066789f82b312587dad61f6d807538aac00c).
+
+Thanks to LSP maintainer [Rafał Chłodnicki](https://twitter.com/rchl2k).
 
 </div>
