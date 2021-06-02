@@ -7,7 +7,7 @@ tags: python
 image: st4_python.jpg
 short_description: How to setup Sublime Text 4 for Python using Python LSP Server
 keywords: "python sublimetext4"
-last_modified: 2021-05-31 13:16:00 +0000
+last_modified: 2021-06-02 16:13:00 +0000
 ---
 
 <div markdown="1" class="sticky">
@@ -79,7 +79,7 @@ While this is likely completely fine for most users, you may want more control o
 2. In your project's virtual environment (you are using a virtual environment, right?)
 
 ```
-pip install python-lsp-server[all] pyls-black mypy-ls pyls-isort
+pip install python-lsp-server[all] python-lsp-black mypy-ls pyls-isort
 ```
 
 And any other PyLSP plugins you see fit, these are the ones I use most.
@@ -106,7 +106,8 @@ And any other PyLSP plugins you see fit, these are the ones I use most.
                 "pylsp.plugins.jedi_rename.enabled": true,  // included in pyls
                 // File formatter, invoke via LSP: Format file
                 "pylsp.plugins.autopep8.enabled": false,  // enabled by default, use black
-                "pylsp.plugins.black.enabled": true,  // from pyls-black
+                "pylsp.plugins.yapf.enabled": false,  // enabled by default, use black
+                "pylsp.plugins.black.enabled": true,  // from python-lsp-black
                 "pylsp.plugins.mypy_ls.enabled": true,  // from mypy-ls
             },
         },
@@ -187,6 +188,11 @@ I would like to thank the Spyder IDE team for taking the time to fork and mainta
 And, of course, the Sublime HQ team for making an awesome text editor.
 
 ## Updates
+
+**2021-06-02**
+
+- Amend Black plugin to [`python-lsp-black`](https://github.com/python-lsp/python-lsp-black).
+- Disable `yapf` formatter on LSP general settings as it seems to interfere with Black.
 
 **2021-05-31**
 
